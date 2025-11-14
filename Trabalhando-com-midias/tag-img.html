@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Formatos de Imagem (URLs)</title>
+  <style>
+    body { 
+      font-family: sans-serif; 
+      line-height: 1.6;
+      margin: 20px;
+    }
+    .container {
+      border: 2px solid #333;
+      background-color: #f0f0f0;
+      padding: 15px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+    }
+    img { 
+      max-width: 300px; 
+      height: auto; 
+      margin: 10px; 
+      background-color: white; /* Fundo branco para ver transparência */
+    }
+    h2 {
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 5px;
+    }
+    
+    /* Regra de estilo específica para o nosso SVG */
+    .logo-svg {
+      width: 150px; /* Podemos controlar o tamanho do SVG com CSS */
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Formatos de Imagem na Web (Exemplos)</h1>
+
+  <div class="container">
+    <h2>Foto (JPEG)</h2>
+    <p>Ideal para fotos. Alta compressão, mas sem transparência.</p>
+    <img 
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Felis_catus-cat_on_snow.jpg/640px-Felis_catus-cat_on_snow.jpg" 
+      alt="Uma foto de um gato sentado na neve (formato JPEG)">
+  </div>
+
+  <div class="container">
+    <h2>Logo com Fundo Transparente (PNG)</h2>
+    <p>Ideal para logotipos e ícones. Suporta transparência perfeita.</p>
+    <img 
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/640px-Google_%22G%22_logo.svg.png" 
+      alt="O logotipo 'G' do Google com fundo transparente (formato PNG)">
+  </div>
+
+  <div class="container">
+    <h2>Logo Escalável (SVG)</h2>
+    <p>Ideal para logotipos. Vetor, por isso tem zoom infinito sem perder qualidade.</p>
+    
+    <svg 
+      class="logo-svg"
+      xmlns="http://www.w3.org/2000/svg" 
+      viewBox="0 0 125 125">
+      <path fill="#FFB13B" d="M62.5,12.5C33.8,12.5,12.5,33.8,12.5,62.5c0,28.7,21.3,50,50,50c28.7,0,50-21.3,50-50C112.5,33.8,91.2,12.5,62.5,12.5z"/>
+      <path fill="#FFFFFF" d="M37.6,83.4c-0.6,0-1.2-0.1-1.8-0.2c-0.8-0.2-1.6-0.5-2.4-0.8c-0.8-0.3-1.6-0.8-2.3-1.3c-0.6-0.5-1.1-1.1-1.6-1.7c-0.6-0.8-1-1.7-1.3-2.6c-0.3-0.9-0.5-1.9-0.5-2.9c0-1.1,0.2-2.1,0.6-3.1c0.4-1,0.9-1.9,1.5-2.7c0.6-0.8,1.3-1.5,2.1-2.1c0.8-0.6,1.8-1.1,2.8-1.5c1-0.4,2.1-0.6,3.2-0.6c1.1,0,2.1,0.2,3.1,0.5s1.9,0.8,2.8,1.3c0.8,0.5,1.6,1.2,2.2,1.9c0.7,0.7,1.2,1.6,1.6,2.5c0.4,0.9,0.6,2,0.6,3c0,1-0.1,2-0.4,2.9c-0.3,0.9-0.7,1.8-1.2,2.6c-0.5,0.8-1.1,1.5-1.7,2.1c-0.6,0.6-1.4,1.1-2.2,1.5c-0.8,0.4-1.7,0.7-2.6,0.9C39.1,83.3,38.3,83.4,37.6,83.4z M37.7,70.1c-0.6,0-1.2,0.1-1.7,0.3c-0.5,0.2-1,0.5-1.4,0.8c-0.4,0.3-0.8,0.7-1,1.1c-0.3,0.4-0.4,0.9-0.4,1.4c0,0.5,0.1,1,0.4,1.4c0.2,0.4,0.6,0.8,1,1.1c0.4,0.3,0.9,0.6,1.4,0.8c0.5,0.2,1.1,0.3,1.7,0.3c0.6,0,1.2-0.1,1.7-0.3c0.5-0.2,1-0.5,1.4-0.8c0.4-0.3,0.8-0.7,1.1-1.1c0.3-0.4,0.4-0.9,0.4-1.4c0-0.5-0.1-1-0.4-1.4c-0.3-0.4-0.6-0.8-1.1-1.1c-0.4-0.3-0.9-0.6-1.4-0.8C38.9,70.2,38.3,70.1,37.7,70.1z"/>
+      <path fill="#FFFFFF" d="M53.1,83.1h-4.2L46,73.5l-3,9.6h-4.2l-6-20h4.3l4.1,13.6l3-9.5h4.2l3,9.5l4.1-13.6h4.3L53.1,83.1z"/>
+      <path fill="#FFFFFF" d="M72,83.1l-6-20h4.3l4.1,13.6l3-9.5h4.2l3,9.5l4.1-13.6h4.3l-6,20h-4.2L82,73.5l-3,9.6H72z"/>
+    </svg>
+  </div>
+
+  <div class="container">
+    <h2>Animação (GIF)</h2>
+    <p>Formato clássico para animações simples (embora WebP ou <video> sejam melhores).</p>
+    <img 
+      src="https://upload.wikimedia.org/wikipedia/commons/2/2c/Rotating_earth_%28large%29.gif" 
+      alt="Um globo terrestre a girar (formato GIF animado)">
+  </div>
+
+  <div class="container">
+    <h2>Imagem Moderna (WebP)</h2>
+    <p>O melhor de todos: é mais leve que JPEG e suporta transparência como PNG.</p>
+    <img 
+      src="https://www.gstatic.com/webp/gallery/4.sm.webp" 
+      alt="Uma paisagem de neve (formato WebP)">
+  </div>
+
+</body>
+</html>
